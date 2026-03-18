@@ -26,3 +26,4 @@ const calculateTotalAndPercentageArrow = (m, e, s) => {
 };
 console.log(calculateTotalAndPercentageArrow(math, english, science));
 // Output: Total = 240, Percentage = 80%
+

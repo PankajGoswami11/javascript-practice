@@ -5,13 +5,14 @@ The goal is to improve problem-solving skills and build a strong foundation in J
 
 ---
 
-## 📚 Topics Covered
+## Topics Covered
 
 - Variables (`let`, `const`)
 - Functions
 - Arrow Functions
 - Conditional Statements (`if/else`)
 - Switch Case
+- Loops (`for`, `while`)
 - Ternary Operator
 - Objects
 - Basic Math Operations
@@ -19,17 +20,17 @@ The goal is to improve problem-solving skills and build a strong foundation in J
 
 ---
 
-## 📅 Daily Progress
+## Daily Progress
 
 - Day 1: Questions 1–10 ✅  
 - Day 2: Questions 11–20 ✅  
-- Day 3: Questions 21–30 ⏳  
+- Day 3: Questions 21–30 ✅  
 
 ---
 
-## 🧠 Practice Problems
+## Practice Problems
 
-### 🔹 Basics (1–10)
+### Basics (1–10)
 
 1. Even or Odd  
 2. Sum of Two Numbers  
@@ -44,7 +45,7 @@ The goal is to improve problem-solving skills and build a strong foundation in J
 
 ---
 
-### 🔹 Intermediate (11–20)
+### Intermediate (11–20)
 
 11. Swap Two Numbers  
 12. Find the Remainder  
@@ -59,46 +60,70 @@ The goal is to improve problem-solving skills and build a strong foundation in J
 
 ---
 
-## 📁 Project Structure
+### Intermediate (21–30)
 
-javascript-practice
-│
-├── README.md
-│
-├── basics
-│ ├── 01-even-odd.js
-│ ├── 02-sum-of-two-numbers.js
-│ ├── 03-area-of-rectangle.js
-│ ├── 04-square-of-number.js
-│ ├── 05-average-of-three.js
-│ ├── 06-temperature-converter.js
-│ ├── 07-remainder-calculator.js
-│ ├── 08-simple-calculator.js
-│ ├── 09-largest-number.js
-│ ├── 10-power-calculator.js
-│
-├── intermediate
-│ ├── 11-swap-two-numbers.js
-│ ├── 12-remainder.js
-│ ├── 13-minutes-to-seconds.js
-│ ├── 14-positive-negative.js
-│ ├── 15-largest-three.js
-│ ├── 16-discount.js
-│ ├── 17-hours-to-minutes.js
-│ ├── 18-square-root.js
-│ ├── 19-divisible.js
-│ ├── 20-percentage.js
-
+21. Basic Calculator  
+22. Power Calculator  
+23. Square and Cube  
+24. Factorial of a Number  
+25. Even or Odd (Function)  
+26. Sum from 1 to N  
+27. Multiplication Table  
+28. Count Digits  
+29. Divisible Check  
+30. Find Greatest of Three Numbers  
 
 ---
 
-## 🎯 Purpose
+## Project Structure
+
+javascript-practice  
+│  
+├── README.md  
+│  
+├── basics  
+│   ├── 01-even-odd.js  
+│   ├── 02-sum-of-two-numbers.js  
+│   ├── 03-area-of-rectangle.js  
+│   ├── 04-square-of-number.js  
+│   ├── 05-average-of-three.js  
+│   ├── 06-temperature-converter.js  
+│   ├── 07-remainder-calculator.js  
+│   ├── 08-simple-calculator.js  
+│   ├── 09-largest-number.js  
+│   ├── 10-power-calculator.js  
+│  
+├── intermediate  
+│   ├── 11-swap-two-numbers.js  
+│   ├── 12-remainder.js  
+│   ├── 13-minutes-to-seconds.js  
+│   ├── 14-positive-negative.js  
+│   ├── 15-largest-three.js  
+│   ├── 16-discount.js  
+│   ├── 17-hours-to-minutes.js  
+│   ├── 18-square-root.js  
+│   ├── 19-divisible.js  
+│   ├── 20-percentage.js  
+│   ├── 21-basic-calculator.js  
+│   ├── 22-power-calculator.js  
+│   ├── 23-square-cube.js  
+│   ├── 24-factorial.js  
+│   ├── 25-even-odd-function.js  
+│   ├── 26-sum-1-to-n.js  
+│   ├── 27-table.js  
+│   ├── 28-count-digits.js  
+│   ├── 29-divisible-check.js  
+│   ├── 30-greatest-three.js  
+
+---
+
+## Purpose
 
 The purpose of this repository is to practice JavaScript basics and improve logical thinking.  
-I will continue adding more problems daily as part of my learning journey.
+I will keep adding more problems regularly as part of my learning process.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-**Pankaj Goswami**
+Pankaj Goswami
