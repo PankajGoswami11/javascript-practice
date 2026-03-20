@@ -14,6 +14,8 @@ I am solving problems step by step to improve my logic building and strengthen m
 * Loops (`for`, `while`)
 * Ternary Operator
 * Objects
+* Arrays (Basics)
+* Strings
 * Basic Math Operations
 * JavaScript Built-in Methods
 
@@ -25,6 +27,7 @@ I am solving problems step by step to improve my logic building and strengthen m
 * Day 2: Questions 11–20 ✅
 * Day 3: Questions 21–30 ✅
 * Day 4: Questions 31–40 ✅
+* Day 5: Questions 41–50 ✅
 
 ---
 
@@ -90,6 +93,21 @@ I am solving problems step by step to improve my logic building and strengthen m
 
 ---
 
+### 🔹 Intermediate (31–40)
+
+41. Stop at First Multiple of 7 (break)
+42. Skip Multiples of 3 (continue)
+43. Count Odd Numbers (stop at limit)
+44. Sum of Even Numbers in Array
+45. Count Vowels in a String
+46. Check Armstrong Number
+47. Fibonacci Series
+48. Product of Digits
+49. Check Vowel or Consonant
+50. Reverse a String
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -141,16 +159,31 @@ javascript-practice
 │   ├── 38-divisible-by-3.js
 │   ├── 39-even-odd-till-n.js
 │   ├── 40-divisible-3-5-count.js
+│  
+├── advanced/
+│   ├── 41-break-multiple-7.js
+│   ├── 42-continue-multiple-3.js 
+│   ├── 43-count-odd-limit.js 
+│   ├── 44-sum-even-array.js 
+│   ├── 45-count-vowels.js 
+│   ├── 46-armstrong-number.js 
+│   ├── 47-fibonacci.js 
+│   ├── 48-product-digits.js 
+│   ├── 49-vowel-consonant.js 
+│   ├── 50-reverse-string.js
 ```
 
 ---
 
 ## 🎯 Purpose
 
-* Improve JavaScript fundamentals
-* Build strong problem-solving skills
-* Maintain daily coding consistency
-* Prepare for frontend development interviews
+## 🎯 Purpose
+
+The purpose of this repository is to build a strong foundation in JavaScript by solving problems consistently.
+It helps me improve my logical thinking and understanding of core concepts.
+
+I am also focusing on writing clean and readable code while exploring different approaches to solve problems.
+This practice is part of my preparation for frontend development roles.
 
 ---
 
