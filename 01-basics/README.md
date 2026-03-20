@@ -177,8 +177,6 @@ javascript-practice
 
 ## 🎯 Purpose
 
-## 🎯 Purpose
-
 The purpose of this repository is to build a strong foundation in JavaScript by solving problems consistently.
 It helps me improve my logical thinking and understanding of core concepts.
 
