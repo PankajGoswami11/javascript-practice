@@ -160,7 +160,7 @@ javascript-practice
 │   ├── 39-even-odd-till-n.js
 │   ├── 40-divisible-3-5-count.js
 │  
-├── advanced/
+├── advanced-basic/
 │   ├── 41-break-multiple-7.js
 │   ├── 42-continue-multiple-3.js 
 │   ├── 43-count-odd-limit.js 
