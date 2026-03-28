@@ -30,7 +30,7 @@ Functions help to:
 A function defined using the `function` keyword.
 It is hoisted, which means it can be called before its definition.
 
-```js id="f1"
+```js
 function greet() {
   console.log("Hello");
 }
@@ -44,7 +44,7 @@ greet();
 A function stored inside a variable.
 It is not available before initialization.
 
-```js id="f2"
+```js
 const greet = function() {
   console.log("Hello");
 };
@@ -57,7 +57,7 @@ greet();
 
 A shorter syntax for writing functions.
 
-```js id="f3"
+```js
 const greet = () => {
   console.log("Hello");
 };
@@ -69,7 +69,7 @@ const greet = () => {
 
 A function without a name, commonly used in callbacks.
 
-```js id="f4"
+```js
 setTimeout(function() {
   console.log("Hello");
 }, 1000);
@@ -82,7 +82,7 @@ setTimeout(function() {
 Parameters are variables defined in a function.
 Arguments are the values passed during the function call.
 
-```js id="f5"
+```js
 function welcome(name){
   console.log(name);
 }
@@ -95,7 +95,7 @@ welcome("Harsh");
 
 Default values are used when no arguments are provided.
 
-```js id="f6"
+```js
 function add(v1 = 0, v2 = 0){
   console.log(v1 + v2);
 }
@@ -110,14 +110,14 @@ add(12, 8);   // 20
 
 The rest operator collects multiple values into an array.
 
-```js id="f7"
+```js
 function abcd(...val){
   console.log(val);
 }
 abcd(1,2,3,4,5,6);
 ```
 
-```js id="f8"
+```js
 function abcd(a, b, c, ...val){
   console.log(a, b, c, val);
 }
@@ -130,7 +130,7 @@ abcd(1,2,3,4,5,6);
 
 A function can return a value using the `return` keyword.
 
-```js id="f9"
+```js
 function abcd(){
   return 12;
 }
@@ -144,7 +144,7 @@ abcd();
 
 Early return helps simplify conditions by returning early.
 
-```js id="f10"
+```js
 function checkage(age){
   if(age < 18) return "Too young";
   return "Allowed";
@@ -159,7 +159,7 @@ console.log(checkage(17));
 
 Functions can be treated like values in JavaScript.
 
-```js id="f11"
+```js
 function abcd(val){
   val();
 }
@@ -175,7 +175,7 @@ abcd(function(){
 
 A function that accepts or returns another function.
 
-```js id="f12"
+```js
 function abcd(){
   return function(){
     console.log("hello Vinay");
@@ -193,7 +193,7 @@ abcd()();
 
 Depends on external variables.
 
-```js id="f13"
+```js
 let total = 0;
 function addTotal(num){
   total += num;
@@ -204,7 +204,7 @@ function addTotal(num){
 
 Returns output based only on input.
 
-```js id="f14"
+```js
 function addTotalPure(total, num){
   return total + num;
 }
@@ -216,7 +216,7 @@ function addTotalPure(total, num){
 
 A closure allows a function to access variables from its outer scope even after execution.
 
-```js id="f15"
+```js
 function outer() {
   let count = 0;
   return function () {
@@ -236,7 +236,7 @@ counter();
 
 A function that runs immediately after it is defined.
 
-```js id="f16"
+```js
 (function init(){
   console.log("Initialized");
 })();
@@ -250,7 +250,7 @@ Hoisting moves declarations to the top of their scope.
 
 ### Function Declaration (Works)
 
-```js id="f17"
+```js
 greet();
 function greet(){
   console.log("Hi!");
@@ -259,7 +259,7 @@ function greet(){
 
 ### Function Expression (Error)
 
-```js id="f18"
+```js
 // greet();
 var greet = function(){
   console.log("Hi!");
@@ -277,16 +277,55 @@ var greet = function(){
 ├── basic.js
 ├── intermediate.js
 ├── advanced.js
-├── questions.js
+│
+├── questions/
+│   ├── README.md
+│
+│   ├── 01-function-declaration.js
+│   ├── 02-function-expression.js
+│   ├── 03-arrow-function.js
+│   ├── 04-anonymous-function.js
+│   ├── 05-default-parameters.js
+│   ├── 06-rest-operator.js
+│   ├── 07-return-values.js
+│   ├── 08-early-return.js
+│   ├── 09-first-class-function.js
+│   ├── 10-higher-order-function.js
+│   ├── 11-parameters-vs-arguments.js
+│   ├── 12-count-params-args.js
+│   ├── 13-default-param-output.js
+│   ├── 14-rest-with-params.js
+│   ├── 15-sum-rest-operator.js
+│   ├── 16-return-undefined.js
+│   ├── 17-function-variable.js
+│   ├── 18-pass-function.js
+│   ├── 19-closure.js
+│   ├── 20-iife.js
+│   ├── 21-hoisting-declaration.js
+│   ├── 22-hoisting-expression.js
+│   ├── 23-bmi-calculator.js
+│   ├── 24-discount-calculator.js
+│   ├── 25-counter-closure.js
+│   ├── 26-pure-functions.js
+│   └── 27-iife-isolation.js
 ```
+
+---
+
+## 📘 File Overview
+
+* **basic.js** → Core fundamentals
+* **intermediate.js** → Practical usage
+* **advanced.js** → Advanced concepts
+* **questions/** → Concept-wise practice (one file per question)
 
 ---
 
 ## 🛠 How to Use
 
 * Read the concepts from this file
-* Check `.js` files for detailed implementation
-* Practice problems from `questions.js`
+* Practice from `basic.js → intermediate.js → advanced.js`
+* Solve problems from the `questions` folder
 
 ---
 
