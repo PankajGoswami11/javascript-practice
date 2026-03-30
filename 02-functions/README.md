@@ -77,10 +77,10 @@ setTimeout(function() {
 
 ---
 
-## 🔁 Parameters and Arguments
+## 🔁 Parameters vs Arguments
 
-Parameters are variables defined in a function.
-Arguments are the values passed during the function call.
+* **Parameters** → Variables defined in function
+* **Arguments** → Values passed during function call
 
 ```js
 function welcome(name){
@@ -92,8 +92,6 @@ welcome("Harsh");
 ---
 
 ## ⚙️ Default Parameters
-
-Default values are used when no arguments are provided.
 
 ```js
 function add(v1 = 0, v2 = 0){
@@ -107,8 +105,6 @@ add(12, 8);   // 20
 ---
 
 ## 📦 Rest Operator (`...`)
-
-The rest operator collects multiple values into an array.
 
 ```js
 function abcd(...val){
@@ -128,36 +124,26 @@ abcd(1,2,3,4,5,6);
 
 ## 🔙 Return Values
 
-A function can return a value using the `return` keyword.
-
 ```js
 function abcd(){
   return 12;
 }
-
-abcd();
 ```
 
 ---
 
 ## ⚡ Early Return
 
-Early return helps simplify conditions by returning early.
-
 ```js
-function checkage(age){
+function checkAge(age){
   if(age < 18) return "Too young";
   return "Allowed";
 }
-
-console.log(checkage(17));
 ```
 
 ---
 
 ## 🧠 First-Class Functions
-
-Functions can be treated like values in JavaScript.
 
 ```js
 function abcd(val){
@@ -173,8 +159,6 @@ abcd(function(){
 
 ## 🔄 Higher Order Functions
 
-A function that accepts or returns another function.
-
 ```js
 function abcd(){
   return function(){
@@ -189,9 +173,7 @@ abcd()();
 
 ## ⚖️ Pure vs Impure Functions
 
-### Impure Function
-
-Depends on external variables.
+### Impure
 
 ```js
 let total = 0;
@@ -200,9 +182,7 @@ function addTotal(num){
 }
 ```
 
-### Pure Function
-
-Returns output based only on input.
+### Pure
 
 ```js
 function addTotalPure(total, num){
@@ -213,8 +193,6 @@ function addTotalPure(total, num){
 ---
 
 ## 🔒 Closures
-
-A closure allows a function to access variables from its outer scope even after execution.
 
 ```js
 function outer() {
@@ -232,9 +210,7 @@ counter();
 
 ---
 
-## ⚡ IIFE (Immediately Invoked Function Expression)
-
-A function that runs immediately after it is defined.
+## ⚡ IIFE
 
 ```js
 (function init(){
@@ -246,9 +222,7 @@ A function that runs immediately after it is defined.
 
 ## 🧬 Hoisting
 
-Hoisting moves declarations to the top of their scope.
-
-### Function Declaration (Works)
+### Function Declaration
 
 ```js
 greet();
@@ -257,10 +231,10 @@ function greet(){
 }
 ```
 
-### Function Expression (Error)
+### Function Expression
 
 ```js
-// greet();
+// greet(); ❌
 var greet = function(){
   console.log("Hi!");
 };
@@ -291,6 +265,7 @@ var greet = function(){
 │   ├── 08-early-return.js
 │   ├── 09-first-class-function.js
 │   ├── 10-higher-order-function.js
+|
 │   ├── 11-parameters-vs-arguments.js
 │   ├── 12-count-params-args.js
 │   ├── 13-default-param-output.js
@@ -301,13 +276,27 @@ var greet = function(){
 │   ├── 18-pass-function.js
 │   ├── 19-closure.js
 │   ├── 20-iife.js
+|
 │   ├── 21-hoisting-declaration.js
 │   ├── 22-hoisting-expression.js
 │   ├── 23-bmi-calculator.js
 │   ├── 24-discount-calculator.js
 │   ├── 25-counter-closure.js
 │   ├── 26-pure-functions.js
-│   └── 27-iife-isolation.js
+│   ├── 27-iife-isolation.js
+│
+│   ├── 28-callback-basic.js
+│   ├── 29-callback-square.js
+│   ├── 30-calculator-callback.js
+│   ├── 31-settimeout-basic.js
+│   ├── 32-settimeout-loop.js
+│   ├── 33-setinterval-basic.js
+│   ├── 34-callback-hell.js
+│   ├── 35-promise-basic.js
+│   ├── 36-promise-chaining.js
+│   ├── 37-async-await.js
+│   ├── 38-error-handling.js
+│   └── 39-event-listener.js
 ```
 
 ---
@@ -317,18 +306,27 @@ var greet = function(){
 * **basic.js** → Core fundamentals
 * **intermediate.js** → Practical usage
 * **advanced.js** → Advanced concepts
-* **questions/** → Concept-wise practice (one file per question)
+* **questions/** → 1–39 structured practice questions (basic → async JS)
+
+---
+
+## 📚 Questions Breakdown
+
+* **01–10** → Basics
+* **11–20** → Intermediate
+* **21–27** → Core Concepts
+* **28–39** → Callbacks + Async JavaScript
 
 ---
 
 ## 🛠 How to Use
 
-* Read the concepts from this file
-* Practice from `basic.js → intermediate.js → advanced.js`
-* Solve problems from the `questions` folder
+* Read concepts from this file
+* Practice: `basic.js → intermediate.js → advanced.js`
+* Solve all problems from `questions/`
 
 ---
 
 ## 👨‍💻 Author
 
-Pankaj Goswami
+**Pankaj Goswami**
