@@ -46,6 +46,7 @@ questions/
 ├── 15-destructuring.js
 ├── 16-merge-arrays.js
 ├── 17-add-start-spread.js
+├── 18-clone-array.js
 ```
 
 ---
