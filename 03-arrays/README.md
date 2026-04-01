@@ -398,10 +398,26 @@ Update   Splice      Real-world use
 ├── basic.js
 ├── intermediate.js
 ├── advanced.js
+|
 ├── questions/
-│   ├── 01-basic.js
-│   ├── 02-basic.js
-│   ├── ...
+│   ├── 01-print-second-fruit.js
+|   ├── 02-add-elements.js
+|   ├── 03-replace-element.js
+|   ├── 04-push-vs-unshift.js
+|   ├── 05-remove-last-item.js
+|   ├── 06-insert-elements.js
+|   ├── 07-slice-middle.js
+|   ├── 08-sort-reverse.js
+|   ├── 09-map-square.js
+|   ├── 10-filter-greater.js
+|   ├── 11-reduce-sum.js
+|   ├── 12-find-value.js
+|   ├── 13-some-condition.js
+|   ├── 14-every-even.js
+|   ├── 15-destructuring.js
+|   ├── 16-merge-arrays.js
+|   ├── 17-add-start-spread.js
+|   ├── 18-clone-array.js
 ```
 
 ---
