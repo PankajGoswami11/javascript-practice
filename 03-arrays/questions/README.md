@@ -1,13 +1,17 @@
 # 🧠 Array Practice Questions
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Practice-Arrays-blue?style=for-the-badge&logo=javascript" />
-  <img src="https://img.shields.io/badge/Level-Beginner_to_Intermediate-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Focus-Problem_Solving-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Practice-JavaScript_Arrays-yellow?style=for-the-badge&logo=javascript" />
+  <img src="https://img.shields.io/badge/Level-Beginner_to_Intermediate-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-Problem_Solving-success?style=for-the-badge" />
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="250"/>
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=2500&color=F7DF1E&center=true&vCenter=true&width=500&lines=Solving+Array+Problems;Building+Logic+Daily;Mastering+JavaScript+Step+by+Step" />
+</p>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="300"/>
 </p>
 
 ---
@@ -16,15 +20,13 @@
 
 This folder contains my JavaScript array practice questions.
 
-All questions are organized in a simple format where each file represents a single problem with its solution.
-
-The goal is to build strong fundamentals and improve problem-solving skills step by step.
+Each file represents a single problem with a clean and structured solution.
 
 ---
 
 ## 📂 Structure
 
-```id="a1b2c3"
+```id="str123"
 questions/
 │
 ├── 01-print-second-fruit.js
@@ -48,55 +50,47 @@ questions/
 
 ---
 
-## 🎯 What You Will Learn
-
-✨ Array Basics (create, access, update)
-✨ Array Methods (push, pop, splice, slice)
-✨ Iteration (forEach, map)
-✨ Data Filtering (filter, find)
-✨ Aggregation (reduce)
-✨ Logical Checks (some, every)
-✨ Modern JS (destructuring, spread)
-
----
-
 ## 🚀 Learning Flow
 
 <p align="center">
-  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="300"/>
+  <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="280"/>
 </p>
 
-```id="flow12"
-Basic → Methods → Logic → Advanced
-   ↓        ↓         ↓        ↓
- Create   Modify   Filter   Transform
+```id="flow321"
+Basics → Methods → Logic → Advanced
+   ↓         ↓         ↓        ↓
+Create    Modify    Filter   Transform
 ```
+
+---
+
+## 🎯 What You Will Learn
+
+✨ Array fundamentals
+✨ Real-world problem solving
+✨ JavaScript methods
+✨ Data transformation techniques
 
 ---
 
 ## 🛠 How to Use
 
-1. Open any question file
-2. Read the problem statement
-3. Try solving it on your own
-4. Compare with the solution
+1. Pick any question
+2. Try solving it yourself
+3. Compare with solution
+4. Improve your approach
 
 ---
 
 ## 💡 Pro Tip
 
-> Don't just read the code — try to rewrite it yourself.
-> Practice consistency is the real key 🚀
+> Practice daily. Small improvements lead to big results 🚀
 
 ---
 
 ## 📈 Goal
 
-To become confident in handling arrays for:
-
-* Real-world applications
-* Coding interviews
-* Frontend development
+To build strong JavaScript fundamentals and become confident in solving real-world problems.
 
 ---
 
