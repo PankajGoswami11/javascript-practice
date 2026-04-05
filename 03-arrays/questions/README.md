@@ -26,7 +26,7 @@ Each file represents a single problem with a clean and structured solution.
 
 ## 📂 Structure
 
-```id="str123"
+```
 questions/
 │
 ├── 01-print-second-fruit.js
@@ -57,7 +57,7 @@ questions/
   <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="280"/>
 </p>
 
-```id="flow321"
+```
 Basics → Methods → Logic → Advanced
    ↓         ↓         ↓        ↓
 Create    Modify    Filter   Transform

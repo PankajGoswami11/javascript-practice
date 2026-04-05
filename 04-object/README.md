@@ -28,7 +28,7 @@ They allow you to store and manage **structured data** (like user info, API resp
 
 ## 🧠 What is an Object?
 
-```js id="airb5z"
+```js 
 let user = {
   name: "Pankaj",
   age: 21,
@@ -40,7 +40,7 @@ console.log(user);
 
 ### ✅ Output
 
-```id="0ahqph"
+```
 { name: 'Pankaj', age: 21, city: 'Delhi' }
 ```
 
@@ -61,7 +61,7 @@ Objects are used in:
 
 ### ▸ Object Literal
 
-```js id="p9eduy"
+```js 
 let user = {
   name: "Pankaj",
   age: 21
@@ -72,7 +72,7 @@ console.log(user.name);
 
 ### ✅ Output
 
-```id="xbl7rm"
+```
 Pankaj
 ```
 
@@ -80,7 +80,7 @@ Pankaj
 
 ### ▸ Constructor
 
-```js id="7y048v"
+```js 
 let user = new Object();
 user.name = "Pankaj";
 user.age = 21;
@@ -90,7 +90,7 @@ console.log(user);
 
 ### ✅ Output
 
-```id="tk0wni"
+```
 { name: 'Pankaj', age: 21 }
 ```
 
@@ -100,13 +100,13 @@ console.log(user);
 
 ### 🔹 Dot Notation
 
-```js id="cpdje8"
+```js 
 console.log(user.name);
 ```
 
 ### ✅ Output
 
-```id="druy0m"
+```
 Pankaj
 ```
 
@@ -114,13 +114,13 @@ Pankaj
 
 ### 🔹 Bracket Notation
 
-```js id="942dg6"
+```js 
 console.log(user["age"]);
 ```
 
 ### ✅ Output
 
-```id="l8lsd4"
+```
 21
 ```
 
@@ -128,7 +128,7 @@ console.log(user["age"]);
 
 ### ⚡ Dynamic Access
 
-```js id="3zzwq0"
+```js 
 let key = "name";
 
 console.log(user[key]);
@@ -136,7 +136,7 @@ console.log(user[key]);
 
 ### ✅ Output
 
-```id="ldmijc"
+```
 Pankaj
 ```
 
@@ -144,7 +144,7 @@ Pankaj
 
 ## ✏️ Updating Objects
 
-```js id="c8z6gw"
+```js 
 let user = {
   name: "Pankaj",
   age: 21
@@ -157,7 +157,7 @@ console.log(user);
 
 ### ✅ Output
 
-```id="7i7lsu"
+```
 { name: 'Pankaj', age: 22 }
 ```
 
@@ -167,7 +167,7 @@ console.log(user);
 
 ### 🔹 Add Property
 
-```js id="cbg8gt"
+```js 
 user.email = "pankaj@gmail.com";
 
 console.log(user);
@@ -175,7 +175,7 @@ console.log(user);
 
 ### ✅ Output
 
-```id="v4z44m"
+```
 { name: 'Pankaj', age: 22, email: 'pankaj@gmail.com' }
 ```
 
@@ -183,7 +183,7 @@ console.log(user);
 
 ### 🔹 Delete Property
 
-```js id="dndkd4"
+```js 
 delete user.age;
 
 console.log(user);
@@ -191,7 +191,7 @@ console.log(user);
 
 ### ✅ Output
 
-```id="4k87x8"
+```
 { name: 'Pankaj', email: 'pankaj@gmail.com' }
 ```
 
@@ -199,7 +199,7 @@ console.log(user);
 
 ## 🔗 Nested Objects
 
-```js id="7jqhzv"
+```js 
 let user = {
   name: "Pankaj",
   address: {
@@ -213,7 +213,7 @@ console.log(user.address);
 
 ### ✅ Output
 
-```id="hs3wk3"
+```
 { city: 'Delhi', pincode: 110001 }
 ```
 
@@ -221,13 +221,13 @@ console.log(user.address);
 
 ## 🔍 Deep Access
 
-```js id="a7vg7a"
+```js 
 console.log(user.address.city);
 ```
 
 ### ✅ Output
 
-```id="34luwy"
+```
 Delhi
 ```
 
@@ -235,13 +235,13 @@ Delhi
 
 ## 🛡 Optional Chaining
 
-```js id="pueaqq"
+```js 
 console.log(user.contact?.phone);
 ```
 
 ### ✅ Output
 
-```id="4e26wz"
+```
 undefined
 ```
 
@@ -249,7 +249,7 @@ undefined
 
 ## 🔁 Iteration
 
-```js id="4lt88e"
+```js 
 for (let key in user) {
   console.log(key, user[key]);
 }
@@ -257,7 +257,7 @@ for (let key in user) {
 
 ### ✅ Output
 
-```id="7617r4"
+```
 name Pankaj
 address { city: 'Delhi', pincode: 110001 }
 ```
@@ -266,7 +266,7 @@ address { city: 'Delhi', pincode: 110001 }
 
 ## ⚙️ Object Method
 
-```js id="uzkoth"
+```js 
 let user = {
   name: "Pankaj",
   greet() {
@@ -279,7 +279,7 @@ console.log(user.greet());
 
 ### ✅ Output
 
-```id="9z7kvy"
+```
 Hello Pankaj
 ```
 
@@ -287,7 +287,7 @@ Hello Pankaj
 
 ## 📚 Built-in Methods
 
-```js id="ocb7kb"
+```js 
 let user = {
   name: "Pankaj",
   age: 21
@@ -300,7 +300,7 @@ console.log(Object.entries(user));
 
 ### ✅ Output
 
-```id="u5kwhm"
+```
 [ 'name', 'age' ]
 [ 'Pankaj', 21 ]
 [ [ 'name', 'Pankaj' ], [ 'age', 21 ] ]
@@ -312,7 +312,7 @@ console.log(Object.entries(user));
 
 ### ❌ Reference Copy
 
-```js id="aorn56"
+```js 
 let obj = { name: "Pankaj" };
 let copy = obj;
 
@@ -323,7 +323,7 @@ console.log(obj);
 
 ### ⚠️ Output
 
-```id="fvel6l"
+```
 { name: 'Rahul' }
 ```
 
@@ -331,7 +331,7 @@ console.log(obj);
 
 ### ✅ Shallow Copy
 
-```js id="k6nj5l"
+```js 
 let obj = { name: "Pankaj" };
 let copy = { ...obj };
 
@@ -342,7 +342,7 @@ console.log(obj);
 
 ### ✅ Output
 
-```id="umjtc1"
+```
 { name: 'Pankaj' }
 ```
 
@@ -350,7 +350,7 @@ console.log(obj);
 
 ## 🧠 Destructuring
 
-```js id="uid2vl"
+```js 
 let user = {
   name: "Pankaj",
   age: 21
@@ -363,7 +363,7 @@ console.log(name, age);
 
 ### ✅ Output
 
-```id="tg8iq6"
+```
 Pankaj 21
 ```
 
@@ -371,7 +371,7 @@ Pankaj 21
 
 ## ⚡ Spread Operator
 
-```js id="6onqov"
+```js 
 let user = { name: "Pankaj" };
 
 let newUser = { ...user, age: 21 };
@@ -381,7 +381,7 @@ console.log(newUser);
 
 ### ✅ Output
 
-```id="ttz62c"
+```
 { name: 'Pankaj', age: 21 }
 ```
 
@@ -416,10 +416,48 @@ console.log(newUser);
 * spread → copy
 
 ---
+## 📂 Structure
+
+```
+
+04-object/ 
+│
+├── README.md
+├── basic.js
+├── intermediate.js
+├── advanced.js
+|
+├── questions/
+|
+|  ├── 01-create-object.js  
+|  ├── 02-access-dot.js  
+|  ├── 03-access-bracket.js  
+|  ├── 04-dynamic-key.js  
+|  ├── 05-nested-access.js  
+|  ├── 06-destructuring.js  
+|  ├── 07-for-in-loop.js  
+|  ├── 08-object-keys.js  
+|  ├── 09-object-entries.js  
+|  ├── 10-spread-copy.js  |
+|  ├── 11-object-assign.js  
+|  ├── 12-deep-clone.js  
+|  ├── 13-optional-chaining.js  
+|  ├── 14-computed-properties.js  
+|  ├── 15-special-keys.js  
+|  ├── 16-first-name-access.js  
+|  ├── 17-dynamic-access.js  
+|  ├── 18-missing-property.js  
+|  ├── 19-destructure-special.js  
+|  ├── 20-entries-format.js  
+|  ├── 21-shallow-copy-problem.js 
+|  └── 22-deep-clone-fix.js  
+```
+
+---
 
 ## 🎯 Learning Flow
 
-```id="geuy7g"
+```
 Basic → Intermediate → Advanced
    ↓          ↓            ↓
 Create   Modify      Deep Access

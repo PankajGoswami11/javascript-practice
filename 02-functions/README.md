@@ -26,7 +26,7 @@ A function is a reusable block of code that performs a specific task.
 
 In JavaScript, code runs line by line, but a function executes only when it is called.
 
-```js id="q9l3lm"
+```js 
 function greet() {
   console.log("Hello");
 }
@@ -37,7 +37,7 @@ greet();
 
 ## ⚙️ Function Execution Flow
 
-```txt id="2cok3k"
+```txt 
 Call → Execution Context → Memory Creation → Code Execution → Return → End
 ```
 
@@ -61,7 +61,7 @@ Functions help to:
 A function defined using the `function` keyword.
 It is hoisted, which means it can be called before its definition.
 
-```js id="g0qk0r"
+```js 
 function greet() {
   console.log("Hello");
 }
@@ -75,7 +75,7 @@ greet();
 A function stored inside a variable.
 It is not available before initialization.
 
-```js id="1vhtc6"
+```js 
 const greet = function() {
   console.log("Hello");
 };
@@ -88,7 +88,7 @@ greet();
 
 A shorter syntax for writing functions.
 
-```js id="b6h5tl"
+```js 
 const greet = () => {
   console.log("Hello");
 };
@@ -100,7 +100,7 @@ const greet = () => {
 
 A function without a name, commonly used in callbacks.
 
-```js id="fx2u3v"
+```js 
 setTimeout(function() {
   console.log("Hello");
 }, 1000);
@@ -110,12 +110,12 @@ setTimeout(function() {
 
 ## 🔁 Parameters vs Arguments
 
-```txt id="x1p9n8"
+```txt 
 Parameters → defined in function
 Arguments  → passed during call
 ```
 
-```js id="3bz2fy"
+```js 
 function welcome(name){
   console.log(name);
 }
@@ -126,7 +126,7 @@ welcome("Harsh");
 
 ## ⚙️ Default Parameters
 
-```js id="u1m7jw"
+```js 
 function add(v1 = 0, v2 = 0){
   console.log(v1 + v2);
 }
@@ -139,14 +139,14 @@ add(12, 8);
 
 ## 📦 Rest Operator (`...`)
 
-```js id="skq5jz"
+```js 
 function abcd(...val){
   console.log(val);
 }
 abcd(1,2,3,4,5,6);
 ```
 
-```js id="j4n2o1"
+```js 
 function abcd(a, b, c, ...val){
   console.log(a, b, c, val);
 }
@@ -157,12 +157,12 @@ abcd(1,2,3,4,5,6);
 
 ## 🔙 Return Values
 
-```txt id="yq3xrw"
+```txt 
 Return → sends value back
 No return → undefined
 ```
 
-```js id="c4o1kt"
+```js 
 function abcd(){
   return 12;
 }
@@ -172,7 +172,7 @@ function abcd(){
 
 ## ⚡ Early Return
 
-```js id="m6px0v"
+```js 
 function checkAge(age){
   if(age < 18) return "Too young";
   return "Allowed";
@@ -183,11 +183,11 @@ function checkAge(age){
 
 ## 🧠 First-Class Functions
 
-```txt id="3wop2y"
+```txt 
 Functions can be passed, returned, and stored
 ```
 
-```js id="7qk1ra"
+```js 
 function abcd(val){
   val();
 }
@@ -201,11 +201,11 @@ abcd(function(){
 
 ## 🔄 Higher Order Functions
 
-```txt id="b2l8sn"
+```txt 
 Function → takes function OR returns function
 ```
 
-```js id="2r1czg"
+```js 
 function abcd(){
   return function(){
     console.log("hello Vinay");
@@ -221,7 +221,7 @@ abcd()();
 
 ### Impure
 
-```js id="1y5tqo"
+```js 
 let total = 0;
 function addTotal(num){
   total += num;
@@ -230,7 +230,7 @@ function addTotal(num){
 
 ### Pure
 
-```js id="y9wh3x"
+```js 
 function addTotalPure(total, num){
   return total + num;
 }
@@ -240,11 +240,11 @@ function addTotalPure(total, num){
 
 ## 🔒 Closures
 
-```txt id="6p8n1s"
+```txt 
 Inner function remembers outer scope
 ```
 
-```js id="p4h9vd"
+```js 
 function outer() {
   let count = 0;
   return function () {
@@ -262,7 +262,7 @@ counter();
 
 ## ⚡ IIFE
 
-```js id="l9e7vm"
+```js 
 (function init(){
   console.log("Initialized");
 })();
@@ -272,14 +272,14 @@ counter();
 
 ## 🧬 Hoisting
 
-```txt id="0t4j0z"
+```txt 
 Declaration → hoisted ✔
 Expression → not hoisted ❌
 ```
 
 ### Function Declaration
 
-```js id="0xk3g2"
+```js 
 greet();
 function greet(){
   console.log("Hi!");
@@ -288,7 +288,7 @@ function greet(){
 
 ### Function Expression
 
-```js id="k5l2qa"
+```js 
 // greet(); ❌
 var greet = function(){
   console.log("Hi!");
@@ -299,7 +299,7 @@ var greet = function(){
 
 ## 🔄 Async Flow (Core JS Behavior)
 
-```txt id="0hkl1o"
+```txt 
 Call → Web APIs → Callback Queue → Event Loop → Execution
 ```
 
@@ -307,7 +307,7 @@ Call → Web APIs → Callback Queue → Event Loop → Execution
 
 ## 📂 Folder Structure
 
-```id="z5q7mr"
+```
 02-functions/
 │
 ├── README.md
@@ -392,7 +392,7 @@ Call → Web APIs → Callback Queue → Event Loop → Execution
 
 ## 📈 Learning Path
 
-```txt id="g8q3zo"
+```txt 
 Basics → Parameters → Closures → HOF → Async JS → Mastery
 ```
 
