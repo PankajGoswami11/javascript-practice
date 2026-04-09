@@ -8,10 +8,10 @@
 Get the "id" attribute of #title
 */
 
-const element = document.getElementById("title");
-const idValue = element.getAttribute("id");
+// const element = document.getElementById("title");
+// const idValue = element.getAttribute("id");
 
-console.log(idValue);
+// console.log(idValue);
 
 // Output:
 // title
