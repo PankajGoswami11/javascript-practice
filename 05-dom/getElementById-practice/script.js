@@ -157,3 +157,77 @@ way : 2
 let box = document.getElementById("box");
 box.style.width="200px"
 box.style.height="200px"
+
+// Q18
+// Set the text of the element with id="text" to bold
+// way1
+document.getElementById("text").style.fontWeight = "bold";
+// way: 2
+let text = document.getElementById("text");
+text.style.fontWeight = "bold"
+
+
+// Q19
+// Show an alert "Button Clicked" when the button with id="btn" is clicked
+// way: 1
+let btn = document.getElementById("btn");
+btn.addEventListener("click", function(){
+    alert("Button Clicked");
+});
+// way: 2
+document.getElementById("btn").addEventListener("click", function (){
+    alert("Button Clicked");
+});
+
+
+// Q20
+// Change the text of the element with id="counter" from "0" to incrementing numbers when the button is clicked
+let counter = document.getElementById("counter");
+btn.addEventListener("click", function() {
+  counter.innerText = Number(counter.innerText) + 1;
+});
+
+
+// Q21
+// Convert the text of the element with id="para" to uppercase
+let para = document.getElementById("para");
+para.innerText = para.innerText.toUpperCase();
+
+
+// Q22
+// Set the border of the element with id="box" to "2px solid black"
+// way: 1
+let para = document.getElementById("para")
+para.innerText = para.innerText.toUpperCase();
+// way: 2
+document.getElementById("para").innerText =
+document.getElementById("para").innerText.toUpperCase();
+
+
+
+// Q23
+// Hide the element with id="image"
+// way: 1
+let image = document.getElementById("image");
+image.style.display="none";
+// way: 2
+document.getElementById("image").style.display="none";
+
+
+
+// Q24
+// Show the element with id="image"
+way: 1
+document.getElementById("image").style.display="block";
+// way: 2
+let image =document.getElementById("iamge");
+image.style.display="block";
+
+
+// Q25
+// Change the text of the element with id="title" from "Welcome" to "Good Morning" after 2 seconds
+document.getElementById("title").innerText = "Welcome"
+let title = document.getElementById("title");
+setTimeout(function(){
+    title.innerText = "Good Morning";
+}, 2000);
