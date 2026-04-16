@@ -1,4 +1,4 @@
-// getElementById Practice (Q1–Q17)
+// getElementById Practice (Q1–Q25)
 
 /* Q1
 Change the text of the element with id="title" to "Hello World"
