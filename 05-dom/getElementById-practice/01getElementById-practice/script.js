@@ -217,7 +217,7 @@ document.getElementById("image").style.display="none";
 
 // Q24
 // Show the element with id="image"
-way: 1
+// way: 1
 document.getElementById("image").style.display="block";
 // way: 2
 let image =document.getElementById("iamge");
