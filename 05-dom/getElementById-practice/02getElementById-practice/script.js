@@ -125,3 +125,20 @@ let enableBtn = document.getElementById("enableBtn");
 enableBtn.addEventListener("click", function(){
     disableBtn.disable = false;
 });
+
+/*
+Q36
+Toggle the image source when #image is clicked:
+First: https://via.placeholder.com/150
+Second: https://via.placeholder.com/200
+*/
+
+let image = document.getElementById("image");
+image.addEventListener("click", function(){
+    if(image.src.includes("150")){
+        image.src = "https://picsum.photos/200";
+    }
+    else{
+        image.src = "https://picsum.photos/150";
+    }
+});
