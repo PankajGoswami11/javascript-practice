@@ -169,3 +169,17 @@ let charCount = document.getElementById("charCount");
 charInput.addEventListener("input", function(){
     charCount.innerText = charInput.value.length;
 });
+
+
+/*
+Q39
+Convert the text of #inputField to lowercase and display it in #output when #addBtn is clicked.
+*/
+
+let inputField = document.getElementById("inputField");
+let output = document.getElementById("output");
+let addBtn = document.getElementById("addBtn");
+
+addBtn.addEventListener("click", function(){
+    output.innerText = inputField.value.toLowerCase();
+});
