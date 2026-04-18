@@ -192,3 +192,21 @@ box.addEventListener("mouseenter", function(){
 box.addEventListener("mouseleave", function(){
     box.style.backgroundColor = "white";
 });
+
+
+//Q41
+// When the button with id "clearList" is clicked, remove all <li> elements from the <ul> with id "list".
+let clearList = document.getElementById("clearList");
+// way: 1
+let list = document.getElementById("list");
+clearList.addEventListener("click", function(){
+    list.innerHTML = "";
+});
+// way: 2
+clearList.addEventListener("click", function () {
+    list.replaceChildren();
+});
+// way: 3
+while (list.firstChild) {
+    list.removeChild(list.firstChild);
+}
