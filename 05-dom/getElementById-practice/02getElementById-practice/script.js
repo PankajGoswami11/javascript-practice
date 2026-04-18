@@ -132,7 +132,6 @@ Toggle the image source when #image is clicked:
 First: https://via.placeholder.com/150
 Second: https://via.placeholder.com/200
 */
-
 let image = document.getElementById("image");
 image.addEventListener("click", function(){
     if(image.src.includes("150")){
@@ -148,10 +147,8 @@ image.addEventListener("click", function(){
 Q37
 Show the current date and time inside #time when #timeBtn is clicked.
 */
-
 let timeBtn = document.getElementById("timeBtn");
 let time = document.getElementById("time");
-
 timeBtn.addEventListener("click", function(){
     let currentTime = new Date();
     time.innerText = currentTime;
@@ -162,10 +159,8 @@ timeBtn.addEventListener("click", function(){
 Q38
 Display the number of characters typed by the user in #charInput inside #charCount in real time.
 */
-
 let charInput = document.getElementById("charInput");
 let charCount = document.getElementById("charCount");
-
 charInput.addEventListener("input", function(){
     charCount.innerText = charInput.value.length;
 });
@@ -175,11 +170,25 @@ charInput.addEventListener("input", function(){
 Q39
 Convert the text of #inputField to lowercase and display it in #output when #addBtn is clicked.
 */
-
 let inputField = document.getElementById("inputField");
 let output = document.getElementById("output");
 let addBtn = document.getElementById("addBtn");
-
 addBtn.addEventListener("click", function(){
     output.innerText = inputField.value.toLowerCase();
+});
+
+
+/*
+Q40
+Change the background color of #box when the mouse enters (hover),
+and revert it to normal when the mouse leaves.
+*/
+let box = document.getElementById("box");
+// Mouse enter (hover)
+box.addEventListener("mouseenter", function(){
+    box.style.backgroundColor = "lightblue";
+});
+// Mouse leave
+box.addEventListener("mouseleave", function(){
+    box.style.backgroundColor = "white";
 });
