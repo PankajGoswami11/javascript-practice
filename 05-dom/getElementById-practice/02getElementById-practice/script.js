@@ -156,3 +156,16 @@ timeBtn.addEventListener("click", function(){
     let currentTime = new Date();
     time.innerText = currentTime;
 });
+
+
+/*
+Q38
+Display the number of characters typed by the user in #charInput inside #charCount in real time.
+*/
+
+let charInput = document.getElementById("charInput");
+let charCount = document.getElementById("charCount");
+
+charInput.addEventListener("input", function(){
+    charCount.innerText = charInput.value.length;
+});
