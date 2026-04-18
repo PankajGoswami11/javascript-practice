@@ -52,7 +52,8 @@ colorBtn.addEventListener("click", function(){
 });
 
 
-/*Q30
+/*
+Q30
 Count how many times a button is clicked and display the count.
 */
 
@@ -60,4 +61,71 @@ let countBtn = document.getElementById("countBtn");
 let clickCount = document.getElementById("clickCount");
 countBtn.addEventListener("click",function(){
     clickCount.innerText = Number(clickCount.innerText)+1;
+});
+
+
+/*
+Q31
+#inputField me jo text user likhe, usko <li> bana ke #list ke andar add karo jab #addBtn click ho.
+*/
+let input = document.getElementById("inputField");
+let addBtn = document.getElementById("addBtn");
+let list = document.getElementById("list");
+
+addBtn.addEventListener("click", function(){
+let text = input.value;
+let li = document.createElement("li")
+li.innerText = text;
+list.appendChild(li);
+});
+
+
+/*
+Q32
+#removeLast button click hone par #list ka last <li> remove karo.
+*/
+let removeLast = document.getElementById("removeLast")
+let list = document.getElementById("list");
+
+removeLast.addEventListener("click", function(){
+    let lastitem = list.lastElementChild;
+    if(lastitem){
+        list.removeChild(lastitem);
+    }
+});
+
+// way: 2
+removeBtn.addEventListener("click", function () {
+    list.lastElementChild?.remove();
+});
+
+
+/*
+Q33
+#container ke andar jitne bhi <p> elements hain, un sabka text "Updated Text" kar do.
+*/
+let container = document.getElementById("container");
+let para = container.querySelectorAll("p")
+para.forEach(function(p){
+    p.innerText = "Updated Text";
+})
+
+
+/*
+Q34
+#disableBtn par click hone ke baad us button ko disable kar do.
+*/
+let disableBtn = document.getElementById("disableBtn");
+disableBtn.addEventListener("click", function(){
+    disableBtn.disable = true;
+});
+
+
+/*
+Q35
+#enableBtn par click hone par #disableBtn ko wapas enable karo.
+*/
+let enableBtn = document.getElementById("enableBtn");
+enableBtn.addEventListener("click", function(){
+    disableBtn.disable = false;
 });
