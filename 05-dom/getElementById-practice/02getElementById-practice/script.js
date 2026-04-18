@@ -16,7 +16,6 @@ btn.addEventListener("click", function() {
 Q27
 Clear the value of the input field when a button is clicked.
 */
-
 let clearBtn = document.getElementById("clearBtn");
 clearBtn.addEventListener("click", function(){
     input.value = "" ;
@@ -28,7 +27,6 @@ clearBtn.addEventListener("click", function(){
 Q28
 Toggle the visibility of an element with id="box" when a button is clicked.
 */
-
 let box = document.getElementById("box");
 let toggleBtn = document.getElementById("toggleBtn");
 toggleBtn.addEventListener("click", function(){
@@ -45,7 +43,6 @@ toggleBtn.addEventListener("click", function(){
 Q29
 Change the background color of the page when a button is clicked.
 */
-
 let colorBtn = document.getElementById("colorBtn");
 colorBtn.addEventListener("click", function(){
     document.body.style.backgroundColor = "black"
@@ -56,7 +53,6 @@ colorBtn.addEventListener("click", function(){
 Q30
 Count how many times a button is clicked and display the count.
 */
-
 let countBtn = document.getElementById("countBtn");
 let clickCount = document.getElementById("clickCount");
 countBtn.addEventListener("click",function(){
@@ -66,7 +62,7 @@ countBtn.addEventListener("click",function(){
 
 /*
 Q31
-#inputField me jo text user likhe, usko <li> bana ke #list ke andar add karo jab #addBtn click ho.
+Take the text entered in #inputField, create an <li> with that text, and add it inside #list when #addBtn is clicked.
 */
 let input = document.getElementById("inputField");
 let addBtn = document.getElementById("addBtn");
@@ -82,7 +78,7 @@ list.appendChild(li);
 
 /*
 Q32
-#removeLast button click hone par #list ka last <li> remove karo.
+Remove the last <li> from #list when #removeLast button is clicked.
 */
 let removeLast = document.getElementById("removeLast")
 let list = document.getElementById("list");
@@ -102,7 +98,7 @@ removeBtn.addEventListener("click", function () {
 
 /*
 Q33
-#container ke andar jitne bhi <p> elements hain, un sabka text "Updated Text" kar do.
+Change the text of all <p> elements inside #container to "Updated Text".
 */
 let container = document.getElementById("container");
 let para = container.querySelectorAll("p")
@@ -113,7 +109,7 @@ para.forEach(function(p){
 
 /*
 Q34
-#disableBtn par click hone ke baad us button ko disable kar do.
+Disable the button when #disableBtn is clicked.
 */
 let disableBtn = document.getElementById("disableBtn");
 disableBtn.addEventListener("click", function(){
@@ -123,7 +119,7 @@ disableBtn.addEventListener("click", function(){
 
 /*
 Q35
-#enableBtn par click hone par #disableBtn ko wapas enable karo.
+Enable the #disableBtn button again when #enableBtn is clicked.
 */
 let enableBtn = document.getElementById("enableBtn");
 enableBtn.addEventListener("click", function(){
