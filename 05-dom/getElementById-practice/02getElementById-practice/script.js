@@ -142,3 +142,17 @@ image.addEventListener("click", function(){
         image.src = "https://picsum.photos/150";
     }
 });
+
+
+/*
+Q37
+Show the current date and time inside #time when #timeBtn is clicked.
+*/
+
+let timeBtn = document.getElementById("timeBtn");
+let time = document.getElementById("time");
+
+timeBtn.addEventListener("click", function(){
+    let currentTime = new Date();
+    time.innerText = currentTime;
+});
