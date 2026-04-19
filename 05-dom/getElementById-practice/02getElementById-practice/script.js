@@ -303,3 +303,12 @@ const items = list.querySelectorAll("li");
 // Display the count
 output.innerText = items.length;
 
+
+/*
+Q49
+Replace the element with id box with a new <div> element that contains the text "New Box Element".
+*/
+const box = document.getElementById("box");
+const newDiv = document.createElement("div");
+newDiv.innerText = "New Box Element";
+box.replaceWith(newDiv);
