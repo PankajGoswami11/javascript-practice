@@ -221,6 +221,7 @@ let box = document.getElementById("box");
 let clone = box.cloneNode(true);
 document.body.appendChild(clone);
 
+
 /*
 Q43 
 Add multiple classes "active" and "highlight" to the element with the id box.
@@ -239,6 +240,7 @@ box.setAttribute("class", "active highlight")
 let classes = ["active", "highlight"];
 box.classList.add(...classes);
 
+
 /*
 Q44
 Check whether the element with id box has the class "active" or not, and display the result in the element with id output.
@@ -252,6 +254,7 @@ if (boxcontain.classList.contains("active")) {
     outputcontain.innerText = "false";
 }
 
+
 /*
 Q45
 Scroll the page to the top when the element with id scrollTopBtn is clicked.
@@ -264,3 +267,27 @@ scrollTopBtn.addEventListener("click", function() {
     });
 });
 
+
+/*
+Q46
+Change the placeholder text of an input field when the page loads and when a button is clicked.
+*/
+let inputField = document.getElementById("usernameInput");
+let btn = document.getElementById("btn");
+// Page load
+window.onload = function() {
+    inputField.placeholder = "Enter your username...";
+};
+// Button click
+btn.addEventListener("click", function() {
+    inputField.placeholder = "Placeholder changed!";
+});
+
+
+/*
+Q47
+Create a new <button> element using JavaScript with the text "New Button" and append it to the <body>
+*/
+const button = document.createElement("button");
+button.innerText = "New Button";
+document.body.appendChild(button);
