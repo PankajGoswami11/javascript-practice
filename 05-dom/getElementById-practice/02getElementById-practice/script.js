@@ -222,7 +222,8 @@ let clone = box.cloneNode(true);
 document.body.appendChild(clone);
 
 /*
-Q43 Add multiple classes "active" and "highlight" to the element with the id box.
+Q43 
+Add multiple classes "active" and "highlight" to the element with the id box.
 ✅ Best Practice: classList.add()
 ⚠️ Avoid: className & setAttribute (unless needed)let box = document.getElementById("box");
 */
@@ -237,3 +238,17 @@ box.setAttribute("class", "active highlight")
 // way: 4
 let classes = ["active", "highlight"];
 box.classList.add(...classes);
+
+/*
+Q44
+Check whether the element with id box has the class "active" or not, and display the result in the element with id output.
+*/
+let boxcontain = document.getElementById("box");
+let outputcontain = document.getElementById("output");
+
+if (boxcontain.classList.contains("active")) {
+    outputcontain.innerText = "true";
+} else {
+    outputcontain.innerText = "false";
+}
+
