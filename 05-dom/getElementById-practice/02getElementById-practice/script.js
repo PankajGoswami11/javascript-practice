@@ -193,9 +193,10 @@ box.addEventListener("mouseleave", function(){
     box.style.backgroundColor = "white";
 });
 
-
-//Q41
-// When the button with id "clearList" is clicked, remove all <li> elements from the <ul> with id "list".
+/*
+Q41
+When the button with id "clearList" is clicked, remove all <li> elements from the <ul> with id "list".
+*/
 let clearList = document.getElementById("clearList");
 let list = document.getElementById("list");
 // way: 1
@@ -210,3 +211,12 @@ clearList.addEventListener("click", function () {
 while (list.firstChild) {
     list.removeChild(list.firstChild);
 }
+
+
+/*
+Q41
+Clone the element with id `box` and append the cloned element to the end of the `<body>`.
+*/
+let box = document.getElementById("box");
+let clone = box.cloneNode(true);
+document.body.appendChild(clone);
