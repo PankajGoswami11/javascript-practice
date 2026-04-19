@@ -291,3 +291,15 @@ Create a new <button> element using JavaScript with the text "New Button" and ap
 const button = document.createElement("button");
 button.innerText = "New Button";
 document.body.appendChild(button);
+
+/*
+Q48
+Count the total number of <li> elements inside the element with id list and display the result in the element with id output.
+*/
+const list = document.getElementById("list");
+const output = document.getElementById("output");
+// Select all <li> elements inside #list
+const items = list.querySelectorAll("li");
+// Display the count
+output.innerText = items.length;
+
