@@ -313,6 +313,7 @@ const newDiv = document.createElement("div");
 newDiv.innerText = "New Box Element";
 box.replaceWith(newDiv);
 
+
 /*
 Q50
 Display the name of the key pressed on the keyboard inside the element with id output.
