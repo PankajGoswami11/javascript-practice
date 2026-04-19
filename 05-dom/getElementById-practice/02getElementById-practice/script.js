@@ -214,7 +214,7 @@ while (list.firstChild) {
 
 
 /*
-Q41
+Q42
 Clone the element with id `box` and append the cloned element to the end of the `<body>`.
 */
 let box = document.getElementById("box");
