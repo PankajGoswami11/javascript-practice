@@ -74,16 +74,6 @@ dom-practice/
 
 ---
 
-## 🎥 Demo
-
-> Add your project demo GIF here
-
-```id="1n8xza"
-![Demo](demo.gif)
-```
-
----
-
 ## 💻 Example (Q50)
 
 ```javascript id="7k2m9v"
