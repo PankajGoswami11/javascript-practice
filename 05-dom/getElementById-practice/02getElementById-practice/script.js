@@ -252,3 +252,15 @@ if (boxcontain.classList.contains("active")) {
     outputcontain.innerText = "false";
 }
 
+/*
+Q45
+Scroll the page to the top when the element with id scrollTopBtn is clicked.
+*/
+let scrollTopBtn = document.getElementById("scrollTopBtn");
+scrollTopBtn.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
