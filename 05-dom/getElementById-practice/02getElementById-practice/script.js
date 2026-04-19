@@ -220,3 +220,20 @@ Clone the element with id `box` and append the cloned element to the end of the 
 let box = document.getElementById("box");
 let clone = box.cloneNode(true);
 document.body.appendChild(clone);
+
+/*
+Q43// Add multiple classes "active" and "highlight" to the element with the id box.
+// // ✅ Best Practice: classList.add()
+// ⚠️ Avoid: className & setAttribute (unless needed)let box = document.getElementById("box");
+*/
+let box = document.getElementById("box");
+// way: 1
+box.classList.add("active", "highlight");
+// way: 2
+box.classList.add("active");
+box.classList.add("highlight");
+// way: 3
+box.setAttribute("class", "active highlight")
+// way: 4
+let classes = ["active", "highlight"];
+box.classList.add(...classes);
